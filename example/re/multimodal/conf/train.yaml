@@ -1,0 +1,28 @@
+seed: 1234
+
+bert_name: "/home/wpf/pretrain_model/bert-base-uncased"
+vit_name: "/home/wpf/pretrain_model/clip-vit-base-patch32"
+device: cuda
+
+num_epochs: 40
+batch_size: 32
+lr: 1e-5
+warmup_ratio: 0.06
+eval_begin_epoch: 1
+
+max_seq: 80
+aux_size: 128
+rcnn_size: 64
+
+save_path: "best_model"
+load_path: null
+
+hidden_size: 768
+use_cmd_sim: null
+max_len: 77
+reverse_grad_weight: 1.0
+
+recon_weight: 1
+diff_weight: 1
+
+cmd_weight: 1
